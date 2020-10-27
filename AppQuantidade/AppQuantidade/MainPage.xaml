@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppQuantidade.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  Spacing="50">
+        <Label Text="Calculadora Básica" FontSize="20" HorizontalTextAlignment="Center"/>
+        <Label x:Name="lblResultado" Text="" FontSize="48" TextColor="Red" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="Entrada" Text="" WidthRequest="10" ></Entry>
+        <StackLayout Orientation="Horizontal" Spacing="40">
+            <Button Clicked="OnClickMais"
+                    Text="+" FontSize="48"  
+                    WidthRequest="90" HeightRequest="90"
+                    BackgroundColor="White" 
+                    BorderWidth="1" BorderColor="#707070"/>
+            <Button Clicked="OnClickMenos"
+                    Text="-" FontSize="48"
+                    WidthRequest="90" HeightRequest="90"
+                    BackgroundColor="White"
+                    BorderWidth="1" BorderColor="#707070"/>
+        </StackLayout>
+        <Button Clicked="OnClickCalcular" Text="Calcular"></Button>
+
+        <Button Clicked="redirectToAppQtd" Text="Ir para o AppQuantidade"></Button>
+    </StackLayout>
+
+</ContentPage>
